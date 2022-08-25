@@ -16,72 +16,86 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light" id="navbar-example2">
         <div class="container-fluid">
           <a class="navbar-brand fw-bolder" href="#">你的家居</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown me-4">
-                <a type="button" class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
-                  <i class="fa-solid fa-cart-shopping fa-xl me-2"></i> 
-                  <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
-                      3+
-                      <span class="visually-hidden">unread messages</span>
-                    </span>  
-                </a>
-                <ul class="dropdown-menu dropdown-menu-lg-end p-3" style="min-width: 400px;">
-                  <li>
-                    <table class="table align-middle table-borderless table-hover">
-                        <thead>
-                          <tr>
-                            <th colspan="4" style="border-bottom:solid 1px rgb(238, 238, 238) ;color: rgb(115, 115, 115);">已加入購物車</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr >
-                            <th>
-                                <a href="#" class="car-delete">
-                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                                </a>
-                            </th>
-                            <td>涼感保潔墊</td>
-                            <td class="text-center">1件</td>
-                            <td class="text-end">$1499</td>
-                          </tr>
-                          <tr >
-                            <th>
-                                <a href="#" class="car-delete">
-                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                                </a>
-                            </th>
-                            <td>香氛噴霧器</td>
-                            <td class="text-center">1件</td>
-                            <td class="text-end">$599</td>
-                          </tr>
-                          <tr >
-                            <th>
-                                <a href="#" class="car-delete">
-                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                                </a>
-                            </th>
-                            <td>植萃精油</td>
-                            <td class="text-center">2件</td>
-                            <td class="text-end">$568</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                  </li>
-                  <li>
-                    <div class="d-grid gap-2 col-3 mx-auto mt-2">
-                        <button class="btn btn-outline-secondary" type="button">結帳去</button>
-                      </div>
-                </li>
-                </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 nav nav-pills">
+              <!--項目-->
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2">商品細節</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3">結帳頁面</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading4">結帳完成</a>
               </li>
             </ul>
+            <!--購物車-->
+            <div class="nav-item dropdown me-4 ms-auto">
+              <a type="button" class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                <i class="fa-solid fa-cart-shopping fa-xl me-2"></i> 
+                <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
+                    3+
+                    <span class="visually-hidden">unread messages</span>
+                  </span>  
+              </a>
+              <ul class="dropdown-menu dropdown-menu-lg-end p-3" style="min-width: 400px;">
+                <li>
+                  <table class="table align-middle table-borderless table-hover">
+                      <thead>
+                        <tr>
+                          <th colspan="4" style="border-bottom:solid 1px rgb(238, 238, 238) ;color: rgb(115, 115, 115);">已加入購物車</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr >
+                          <th>
+                              <a href="#" class="car-delete">
+                                  <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                              </a>
+                          </th>
+                          <td>涼感保潔墊</td>
+                          <td class="text-center">1件</td>
+                          <td class="text-end">$1499</td>
+                        </tr>
+                        <tr >
+                          <th>
+                              <a href="#" class="car-delete">
+                                  <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                              </a>
+                          </th>
+                          <td>香氛噴霧器</td>
+                          <td class="text-center">1件</td>
+                          <td class="text-end">$599</td>
+                        </tr>
+                        <tr >
+                          <th>
+                              <a href="#" class="car-delete">
+                                  <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                              </a>
+                          </th>
+                          <td>植萃精油</td>
+                          <td class="text-center">2件</td>
+                          <td class="text-end">$568</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </li>
+                <li>
+                  <div class="d-grid gap-2 col-3 mx-auto mt-2">
+                      <button class="btn btn-outline-secondary" type="button">結帳去</button>
+                    </div>
+              </li>
+              </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -96,8 +110,10 @@
           </div>
         </div>
     </div>
+    <!--定位-->
+    <div class="tab-content" id="pills-tabContent">
     <!--content-->
-    <div class="container mt-4 border-bottom">
+    <div class="container mt-4 border-bottom" id="scrollspyHeading1">
       <div class="row">
         <div class="col-md-3 mb-2">
           <div class="list-group sticky-top" id="list-tab" role="tablist">
@@ -870,7 +886,7 @@
       </div>
     </div>
     <!--商品頁面-->
-    <div class="container pt-3 border-bottom mb-4">
+    <div class="container pt-3 border-bottom mb-4" id="scrollspyHeading2">
       <div class="mt-3">
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
@@ -949,7 +965,7 @@
       </div>
     </div>
     <!--結帳頁面-->
-    <div class="container border-bottom pb-4">
+    <div class="container border-bottom pb-4" id="scrollspyHeading3">
       <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳</strong></p>
       <div class="row">
         <div class="col-sm">
@@ -990,9 +1006,7 @@
               <tbody>
                 <tr >
                   <td>
-                    <a href="#" class="car-delete">
-                      <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                  </a>
+                    <img src="imges/Checkout items01.jpg" alt="涼感保潔墊" width="20%;">
                   </td>
                   <td>涼感保潔墊</td>
                   <td class="text-center">1件</td>
@@ -1000,9 +1014,7 @@
                 </tr>
                 <tr >
                   <th>
-                      <a href="#" class="car-delete">
-                          <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                      </a>
+                    <img src="imges/Checkout items02.jpg" alt="涼感保潔墊" width="20%;">
                   </th>
                   <td>香氛噴霧器</td>
                   <td class="text-center">1件</td>
@@ -1010,9 +1022,7 @@
                 </tr>
                 <tr >
                   <th>
-                      <a href="#" class="car-delete">
-                          <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                      </a>
+                    <img src="imges/Checkout items03.jpg" alt="涼感保潔墊" width="20%;">
                   </th>
                   <td>植萃精油</td>
                   <td class="text-center">2件</td>
@@ -1097,7 +1107,7 @@
       
     </div>
     <!--結帳完成頁面-->
-    <div class="container">
+    <div class="container" id="scrollspyHeading4">
       <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳完成</strong></p>
       <div class="row justify-content-center">
         <div class="col-7">
@@ -1118,9 +1128,7 @@
             <tbody>
               <tr >
                 <th>
-                    <a href="#" class="car-delete">
-                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                    </a>
+                    <img src="imges/Checkout items01.jpg" alt="涼感保潔墊" width="20%;">
                 </th>
                 <td>涼感保潔墊</td>
                 <td class="text-center">1件</td>
@@ -1128,9 +1136,7 @@
               </tr>
               <tr >
                 <th>
-                    <a href="#" class="car-delete">
-                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                    </a>
+                  <img src="imges/Checkout items02.jpg" alt="涼感保潔墊" width="20%;">
                 </th>
                 <td>香氛噴霧器</td>
                 <td class="text-center">1件</td>
@@ -1138,9 +1144,7 @@
               </tr>
               <tr >
                 <th>
-                    <a href="#" class="car-delete">
-                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                    </a>
+                  <img src="imges/Checkout items03.jpg" alt="涼感保潔墊" width="20%;">
                 </th>
                 <td>植萃精油</td>
                 <td class="text-center">2件</td>
@@ -1193,6 +1197,8 @@
       
       
     </div>
+    <!--定位結束-->
+  </div>
     <!--footer-->
     <footer class="bg-light py-4 mt-4">
       <div class="d-flex justify-content-center mt-4">
