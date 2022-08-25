@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你的家居</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!--fontawaome-->
+    <script src="https://kit.fontawesome.com/70c5d8c78c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand fw-bolder" href="#">你的家居</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown me-4">
+                <a type="button" class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                  <i class="fa-solid fa-cart-shopping fa-xl me-2"></i> 
+                  <span class="position-absolute top-1 start-100 translate-middle badge rounded-pill bg-danger">
+                      3+
+                      <span class="visually-hidden">unread messages</span>
+                    </span>  
+                </a>
+                <ul class="dropdown-menu dropdown-menu-lg-end p-3" style="min-width: 400px;">
+                  <li>
+                    <table class="table align-middle table-borderless table-hover">
+                        <thead>
+                          <tr>
+                            <th colspan="4" style="border-bottom:solid 1px rgb(238, 238, 238) ;color: rgb(115, 115, 115);">已加入購物車</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr >
+                            <th>
+                                <a href="#" class="car-delete">
+                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                </a>
+                            </th>
+                            <td>涼感保潔墊</td>
+                            <td class="text-center">1件</td>
+                            <td class="text-end">$1499</td>
+                          </tr>
+                          <tr >
+                            <th>
+                                <a href="#" class="car-delete">
+                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                </a>
+                            </th>
+                            <td>香氛噴霧器</td>
+                            <td class="text-center">1件</td>
+                            <td class="text-end">$599</td>
+                          </tr>
+                          <tr >
+                            <th>
+                                <a href="#" class="car-delete">
+                                    <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                                </a>
+                            </th>
+                            <td>植萃精油</td>
+                            <td class="text-center">2件</td>
+                            <td class="text-end">$568</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </li>
+                  <li>
+                    <div class="d-grid gap-2 col-3 mx-auto mt-2">
+                        <button class="btn btn-outline-secondary" type="button">結帳去</button>
+                      </div>
+                </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--banner-->
+    <div class="banner-bg d-flex align-items-end ">
+        <div class="container-fluid p-3 text-bg mb-3 ">
+          <div class="container">
+            <h1 class="fw-bolder" style="color: rgb(106, 94, 86);">不用外出就有質感生活</h1>
+            <p class="h5 fw-semibold" style="color: rgb(73, 58, 51);">讓家的每一個角落充滿幸福，台灣平價首選。</p>
+            <p class="h5 fw-semibold" style="color: rgb(73, 58, 51);">精選商品眾多款式好評熱銷中，<sapn class="text-danger">全站免運</sapn>，今天就下單帶回家。</p>
+
+          </div>
+        </div>
+    </div>
+    <!--content-->
+    <div class="container mt-4 border-bottom">
+      <div class="row">
+        <div class="col-md-3 mb-2">
+          <div class="list-group sticky-top" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active list-group-item-light" id="list-commodity-list" data-bs-toggle="list" href="#list-commodity" role="tab" aria-controls="list-commodity">精選商品</a>
+            <a class="list-group-item list-group-item-action list-group-item-light" id="list-livingroom-list" data-bs-toggle="list" href="#list-livingroom" role="tab" aria-controls="list-livingroom">客廳家具</a>
+            <a class="list-group-item list-group-item-action list-group-item-light" id="list-kitchen-list" data-bs-toggle="list" href="#list-kitchen" role="tab" aria-controls="list-kitchen">衛浴餐廚</a>
+            <a class="list-group-item list-group-item-action list-group-item-light" id="list-bedroom-list" data-bs-toggle="list" href="#list-bedroom" role="tab" aria-controls="list-bedroom">臥室寢具</a>
+            <a class="list-group-item list-group-item-action list-group-item-light" id="list-ornament-list" data-bs-toggle="list" href="#list-ornament" role="tab" aria-controls="list-ornament">生活質感小物</a>
+          </div>
+        </div>
+        <div class="col-md-9">
+          <form class="d-flex col-4" role="search">
+            <input class="form-control form-control-sm me-2 " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-warning btn-sm" type="submit">Search</button>
+          </form>
+          <div class="tab-content" id="nav-tabContent">
+            <!--精選商品內容-->
+            <div class="tab-pane fade show active" id="list-commodity" role="tabpanel" aria-labelledby="list-commodity-list">
+              <div class="row">
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus01.jpg" class="card-img-top" alt="方型沙發抱枕">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">方型沙發抱枕</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary  h6">NT450</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT325</p>
+                        </div>
+                        <p class="card-text text-center mb-4">親膚柔款，生活必備!<br>MIT台灣製造，雙面彩色印刷，多款尺寸與形狀，商用、自用都合適，美觀隱形拉鍊，可拆卸枕芯枕套，方便洗滌。<br>適合放在辦公室小物、房間客廳沙發用抱枕。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <nav aria-label="Page navigation example ms-0">
+                          <ul class="pagination pagination-sm justify-content-center mb-0">
+                            <li class="page-item disabled"><a class="page-link text-black-50 ">M</a></li>
+                            <li class="page-item"><a class="page-link text-secondary" href="#">L</a></li>
+                            <li class="page-item"><a class="page-link text-secondary" href="#">XL</a></li>
+                          </ul>
+                        </nav>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus02.jpg" class="card-img-top" alt="三人布沙發">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">三人布沙發</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT17,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT11,997</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          表面布質舒適觸，為室內營造溫暖氛圍。獨立筒彈簧座面構造，令人放鬆的支撐貼合坐感，具質感與自然風格的木質椅腳。<br>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus03.jpg" class="card-img-top" alt="Paris 布餐椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">Paris 布餐椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT4,500</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT3,888</p>
+                        </div>
+                        <p class="card-text text-center mb-4">傳承70年的Mid-century偉大經典： <br> The Eames DAR Chair <br> 簡約流暢的外型 體現北風簡約美學</p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto disabled">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus04.jpg" class="card-img-top" alt="西力特原木吧台椅(60cm)">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">西力特原木吧台椅(60cm)</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT2,829</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT2,050</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          韓系原木中島椅 / 由實木製作堅穩耐用。<br>可當作餐椅、吧椅、高腳椅 / 60cm高度，適用85~95cm中島吧台
+                        </p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus05.jpg" class="card-img-top" alt="工業風復古鐵網單燈吊燈">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">工業風復古鐵網單燈吊燈</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT1,350</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT950</p>
+                        </div>
+                        <p class="card-text text-center mb-4">房間、玄關或更衣室皆可安裝。</p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto disabled">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus06.jpg" class="card-img-top" alt="人造盆栽 虎尾蘭">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽 虎尾蘭</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT690</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT550</p>
+                        </div>
+                        <p class="card-text text-center mb-4">即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。</p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus07.jpg" class="card-img-top" alt="靠背吧台椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">靠背吧台椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6">NT1,350</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT1,050</p>
+                        </div>
+                        <p class="card-text text-center mb-4">下方橫桿可擱腳，坐得更舒適。環抱的線條設計，柔韌力強勁的材質，讓這張椅子美觀又舒適，快坐下來休息一下吧!</p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/focus08.jpg" class="card-img-top" alt="餐椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">餐椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6">NT1,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT899</p>
+                        </div>
+                        <p class="card-text text-center mb-4">椅子配上座墊，非常適合長時間用餐或與家人進行桌上遊戲時使用。<br>為防止刮花表面及移動椅腳時發出刮擦聲，可搭配FIXA自黏式地板防刮傷墊片使用(需另購)。</p>  
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto disabled">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--客廳家具內容-->
+            <div class="tab-pane fade" id="list-livingroom" role="tabpanel" aria-labelledby="list-livingroom-list">
+              <div class="row">
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room01.jpg" class="card-img-top" alt="芝加哥三人座全牛皮沙發">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">芝加哥三人座全牛皮沙發</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary  h6">NT117,800</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT81,888</p>
+                        </div>
+                        <p class="card-text text-center mb-4">全頭層牛皮，扎實做工柔軟親膚。美式包覆坐感，有如躺在床上一般舒適，無任何時何事都能找到最舒適的位子。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room02.jpg" class="card-img-top" alt="愛絲柏單人沙發">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">愛絲柏單人沙發</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT6,980</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT6,380</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          造型典雅，舒適好坐。居家商用都適合。實木椅腳穩固耐用。此商品需組裝椅腳。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room03.jpg" class="card-img-top" alt="竹架曲圓茶几">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">竹架曲圓茶几</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT8,500</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT6,800</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          反映了無縫的原始形狀和永恆的美感，同時也可以提供足夠支撐力。在過去的70年代裏已成爲了現在主義的象徵，這款咖啡桌彰顯功能性的基本要素，同時也保有標志性的優雅和精緻設計。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room04.jpg" class="card-img-top" alt="Sena賽娜布面厚感實木腳休閒椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">Sena賽娜布面厚感實木腳休閒椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT4,603</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT3,000</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          柔軟性和透氣性兼具的布面坐墊，簡約之造型與實木框架相映成輝。正常使用下，結構保固一年。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room05.jpg" class="card-img-top" alt="積木實木圓形茶几">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">積木實木圓形茶几</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT7,500</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT7,500</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          復古的灰棕色實木，提升空間的明亮度，厚實且清新的木質感。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room06.jpg" class="card-img-top" alt="沐光系列單人造型椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">沐光系列單人造型椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT6,900</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT6,571</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          棉麻面料，透氣親膚手感好，曲線造型設計，雙倍加厚海綿坐墊，彈性、支撐性佳，坐起來更放鬆，北歐風格調，簡約、大方，極具設計感。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/living room07.jpg" class="card-img-top" alt="雅思本簡約系單人沙發">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">雅思本簡約系單人沙發</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT4,990</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT2,880</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          棉麻面料，透氣親膚手感好，曲線造型設計，雙倍加厚海綿坐墊，彈性、支撐性佳，坐起來更放鬆，北歐風格調，簡約、大方，極具設計感。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--衛浴餐廚內容-->
+            <div class="tab-pane fade" id="list-kitchen" role="tabpanel" aria-labelledby="list-kitchen-list">
+              <div class="row">
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen01.jpg" class="card-img-top" alt="BLADE不鏽鋼抽拉式廚房萬向水龍頭">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">BLADE不鏽鋼抽拉式廚房萬向水龍頭</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT18,99</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT1,500</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          廚房專用大面積清理水龍頭，輕鬆伸縮使用,隨時調整需要角度，支持冷熱出水，水管家常使用更方便，還可變更出水模式，一鍵轉換，清洗不麻煩。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen02.jpg" class="card-img-top" alt="工業風全銅水龍頭">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">工業風全銅水龍頭</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT1,722</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT1,722</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          台中現貨可自取。全銅製造，附四分水管 ，單冷水 ，安裝處開孔直徑限定2.2~3.2公分之間。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen03.jpg" class="card-img-top" alt=" 歐式 古典 仿古 全銅水龍頭">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center"> 歐式古典仿古全銅水龍頭</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT1,800</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT1,689</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          台中現貨可自取。全銅製造，附四分水管 ，單冷水 ，安裝處開孔直徑限定2.2~3.2公分之間。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen04.jpg" class="card-img-top" alt="金屬金邊鏡子">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">金屬金邊鏡子</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT999</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          亮胡桃木色橡實木，鏡面玻璃，三扣片系統掛片，不包括壁掛用五金配件，可垂直或水平吊掛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen05.jpg" class="card-img-top" alt="檯桌椅組(吧檯桌+吧檯椅*2)">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">檯桌椅組(吧檯桌+吧檯椅*2)</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT1,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT8997</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          簡約圓弧桌角設計，全實木設計手感溫潤且堅固耐用。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen06.jpg" class="card-img-top" alt="工業風吊燈">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">工業風吊燈</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT700</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          球形燈罩的直線為房間創造出充滿玩味的影子。搭配一個裝飾性燈泡，讓你的吊燈更加完美。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/kitchen07.jpg" class="card-img-top" alt="三人布沙發">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">三人布沙發</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT17,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT11,997</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          表面布質舒適觸，為室內營造溫暖氛圍。獨立筒彈簧座面構造，令人放鬆的支撐貼合坐感，具質感與自然風格的木質椅腳。<br>
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">搶購去</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--臥室請具內容-->
+            <div class="tab-pane fade" id="list-bedroom" role="tabpanel" aria-labelledby="list-bedroom-list">
+              <div class="row">
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom01.jpg" class="card-img-top" alt="擇木深耕-柏莎北歐單人造型椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">擇木深耕-柏莎北歐單人造型椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT19,800</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT18,612</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          亞麻布加超纖皮提供您舒適座感，白蠟木紋理美觀自然，安全穩固，北歐簡約設計，時尚有型。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom02.jpg" class="card-img-top" alt="籐製扶手椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">籐製扶手椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT4,399</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT4,399</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          手工編織製成，使每張扶手椅都是獨一無二；通風又耐用，能讓你舒服地蜷臥休息；天然材質，也能為家裡帶來大自然的氣息。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom03.jpg" class="card-img-top" alt="擇木深耕-柏莎北歐單人造型椅">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">擇木深耕-柏莎北歐單人造型椅</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT19,800</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT18,612</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          亞麻布加超纖皮提供您舒適座感，白蠟木紋理美觀自然，安全穩固，北歐簡約設計，時尚有型。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom04.jpg" class="card-img-top" alt="諾迪北歐風邊桌 灰色">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">諾迪北歐風邊桌 灰色</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT4,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT3,900</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          韓國原創設計，韓劇同款推薦，北歐風桌。板耐熱、防潑水 耐用度高。床頭桌/沙發邊桌/小茶几
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom05.jpg" class="card-img-top" alt="小型桌上型地球儀擺設">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">小型桌上型地球儀擺設</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT1,300</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT1,170</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          尺寸 ／ 11X17.5CM<br>
+                          材質 ／ 木頭/ 黃銅
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/bedroom06.jpg" class="card-img-top" alt="Connie 書桌">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">Connie 書桌</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT19,999</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT18,997</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          使用北美原生種原木製成，鮮明大山紋理，木色細膩溫潤。北歐經典，自然清新。板材通過歐盟低甲醛E1環保安全無害。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--生活質感小物內容-->
+            <div class="tab-pane fade" id="list-ornament" role="tabpanel" aria-labelledby="list-ornament-list">
+              <div class="row">
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament01.jpg" class="card-img-top" alt="人造盆栽, 百里香">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽, 百里香</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT149</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT149</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament02.jpg" class="card-img-top" alt="人造盆栽附花盆, 室內/戶外用 多肉植物">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽附花盆, 室內/戶外用 多肉植物</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT49</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT49</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament03.jpg" class="card-img-top" alt="人造盆栽, 室內/戶外用 粉紅色">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽, 室內/戶外用 粉紅色</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT499</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT499</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament05.jpg" class="card-img-top" alt="人造盆栽, 室內/戶外用 龜背芋">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽, 室內/戶外用 龜背芋</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT349</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT349</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament06.jpg" class="card-img-top" alt="人造盆栽附花盆">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽附花盆</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT149</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT149</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament07.jpg" class="card-img-top" alt="有框畫">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">有框畫</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT899</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT899</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          可用藝術品妝點居家，增添個人風格。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament08.jpg" class="card-img-top" alt="香氛杯狀蠟燭/北歐的森林">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">香氛杯狀蠟燭/北歐的森林</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT129</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT129</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          你覺得家的味道是怎樣的？<br>
+                          香氛蠟燭的濃郁柑橘香味，如置身在北歐森林裡，帶給你一種安心熟悉的感覺。 蠟燭來自大自然的啟發，讓你體驗真摰的感受。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mt-3 mb-2">
+                  <div class="card h-100">
+                    <img src="imges/ornament04.jpg" class="card-img-top" alt="人造盆栽, 室內/戶外用 粉紅色">
+                    <div class="card-body d-flex flex-column">
+                      <div>
+                        <h4 class="card-title fw-semibold text-center">人造盆栽, 室內/戶外用 粉紅色</h4>
+                        <div class="d-flex justify-content-center align-items-center my-2">
+                          <p class="text-decoration-line-through text-secondary h6 ">NT499</p>
+                          <p class="text-danger fw-semibold h5 ms-2">NT499</p>
+                        </div>
+                        <p class="card-text text-center mb-4">
+                          即使不擅長園藝，也能欣賞到漂亮的綠色植物；不用澆水或修剪枯枝，看起來像真的一樣，可騙過大家的眼睛。
+                        </p>
+                      </div>
+                      <div class="mt-auto">
+                        <a type="button" class="btn btn-sm btn-outline-secondary d-grid gap-2 col-6 mx-auto">立即購買</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <nav aria-label="Page navigation example">
+            <ul class="pagination justify-content-center mt-4">
+              <li class="page-item disabled"><a class="page-link border-secondary text-secondary" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link border-secondary text-secondary" href="#">1</a></li>
+              <li class="page-item"><a class="page-link border-secondary text-secondary" href="#">2</a></li>
+              <li class="page-item"><a class="page-link border-secondary text-secondary" href="#">3</a></li>
+              <li class="page-item"><a class="page-link border-secondary text-secondary" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+        </div>
+      </div>
+    </div>
+    <!--商品頁面-->
+    <div class="container pt-3 border-bottom mb-4">
+      <div class="mt-3">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#" class="footer-link">首頁</a></li>
+            <li class="breadcrumb-item"><a href="#" class="footer-link">精選商品</a></li>
+            <li class="breadcrumb-item active" aria-current="page">三人布沙發</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="row mt-4 mb-4">
+        <div class="col-lg-5 pe-4">
+          <div class="sticky-top">
+            <h1 class="fw-semibold pt-4">三人布沙發<span class="text-secondary h3 ps-2">(英倫文青風)</span></h1>
+            <div class="d-flex pt-2">
+              <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
+              <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
+              <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
+              <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
+              <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
+            </div>
+            <div class="d-flex justify-content-between align-items-end">
+              <p class="text-decoration-line-through text-secondary h6 ">售價 NT1,7999</p>
+              <p class="text-danger h4 ms-2">網路價 NT<span class="fw-semibold h2"> 1,1997</span></p>
+            </div>
+            <div class="d-flex mb-3">
+              <div class="input-group">
+                <select class="form-select me-2" id="inputGroupSelect02">
+                  <option selected>1件</option>
+                  <option value="1">2件</option>
+                  <option value="2">3件</option>
+                  <option value="3">4件</option>
+                </select>
+              </div>
+              <button type="button" class="btn btn-secondary text-nowrap">加入購物車</button>
+            </div>
+            <div class="text-secondary">
+              <p class="h4 mt-4">規格介紹:</p>
+            <ul class="border-bottom pb-3">
+              <li>燈芯絨布手感柔軟，光澤柔和均勻，紋理清晰，簡約高級。</li>
+              <li>骨架內材使用松木+橡筋+S彈簧，承重力強，安全穩固。</li>
+              <li>高回彈海棉坐墊，彈性絕佳，帶給您超舒適的座感享受。</li>
+              <li>乳膠粒加聚酯棉靠枕，厚實柔軟，讓腰背部得到良好倚靠。</li>
+              <li>坐墊靠枕布套可拆式，髒污後只需加以清洗，清潔整理方便。(建議乾洗)</li>
+              <li>隨機附贈兩個小抱枕，舒適好靠，營造居家溫馨與放鬆感。</li>
+            </ul>
+            <p class="h4 mt-4">商品尺寸:</p>
+            <ul class="border-bottom pb-2">
+              <li>三人座：長 210cm x 深 98cm x 高 93cm / 座高 44cm / 座深 64cm</li>
+              <li>內容物：三人座x1+隨機出色小抱枕x2</li>
+              <li>顏色：高雅綠</li>
+              <li>備註：骨架十年保固</li>
+              <li>商品類型：三人沙發、布沙發</li>
+            </ul>
+            <p class="mb-4">建議擺放位置：客廳、臥室、書房、店面</p>
+            </div>
+  
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <p class="h3 pt-4">提升居家質感的重要角色</p>
+          <p >採用低座位式設計，穿透性佳，空間感覺更寬敞，亞麻布清新自然。<br>可拆洗布套清潔整理好輕鬆，日式木質椅腳質感好，附贈小抱枕，柔軟好倚靠，居家空間變得溫馨又舒適。</p>
+          <img src="imges/focus02.jpg" alt="經典燈心絨紋理" style="width: 100%;">
+          <p class="h4 mt-4">經典燈心絨紋理</p>
+          <p>手感柔軟，絨條清晰圓潤，光澤柔和均勻，簡約高級。</p>
+          <img src="imges/focus02-1.jpg" alt="隨機附贈小抱枕兩入" style="width: 100%;">
+          <p class="h4 mt-4">使用高回彈海綿坐墊</p>
+          <p>回彈力極佳，坐感柔軟舒適。</p>
+          <img src="imges/focus02-3.jpg" alt="坐墊靠枕布套可拆式設計" style="width: 100%;">
+          <p class="h4 mt-4">坐墊靠枕布套可拆式設計</p>
+          <p>清潔方便，不擔心小孩與毛孩來搗亂!</p>
+          <div class="bg-light p-3 border border-dark border-opacity-10">
+            <p class="h5 text-center text-secondary">購物說明</p>
+            <p class="text-secondary mb-0 text-center">電腦螢幕解析度的不同，實品與商品照片會有些許色差，商品以實際收到的實品為標準，如介意者請勿訂購！</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--結帳頁面-->
+    <div class="container border-bottom pb-4">
+      <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳</strong></p>
+      <div class="row">
+        <div class="col-sm">
+          <div class="alert alert-success text-center alert-rouned" role="alert">
+            1.輸入訂單資料
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="alert alert-light text-center alert-rouned" role="alert">
+            2.金流付款
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="alert alert-light text-center alert-rouned" role="alert">
+            3.完成
+          </div>
+        </div>
+      </div>
+      <div class="card mb-4">
+        <div class="card-header">
+          <p class="mb-0">
+            <a class="text-decoration-none" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+              顯示購物車細節
+            </a>
+          </p>
+        </div>
+        <div class="collapse" id="collapseExample">
+          <div class="card-body">
+            <table class="table table-borderless table-hover mb-0">
+              <thead>
+                <tr>
+                  <th></th>
+                  <th class="text-start">商品名稱</th>
+                  <th class="text-center">數量</th>
+                  <th class="text-end">小計</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr >
+                  <th>
+                      <a href="#" class="car-delete">
+                          <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      </a>
+                  </th>
+                  <td>涼感保潔墊</td>
+                  <td class="text-center">1件</td>
+                  <td class="text-end">$1499</td>
+                </tr>
+                <tr >
+                  <th>
+                      <a href="#" class="car-delete">
+                          <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      </a>
+                  </th>
+                  <td>香氛噴霧器</td>
+                  <td class="text-center">1件</td>
+                  <td class="text-end">$599</td>
+                </tr>
+                <tr >
+                  <th>
+                      <a href="#" class="car-delete">
+                          <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                      </a>
+                  </th>
+                  <td>植萃精油</td>
+                  <td class="text-center">2件</td>
+                  <td class="text-end">$568</td>
+                </tr>
+              </tbody>
+              <tfoot class="border-top">
+                <tr>
+                  <th colspan="3" class="text-end">運費</th>
+                  <th class="text-end">$60</th>
+                </tr>
+                <tr>
+                  <th colspan="3" class="text-end">總計</th>
+                  <th class="text-end"><strong>$2,666</strong></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+        </div>
+      </div>
+      <p class="bg-light p-2 h4 text-center">訂購人資訊</p>
+      <form class="row g-3 needs-validation" novalidate>
+        <div class="col-md-4">
+          <label for="validationCustom01" class="form-label">姓名</label>
+          <input type="text" class="form-control text-secondary" id="validationCustom01" placeholder="姓名" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+        <div class="col-md-8">
+          <label for="validationCustomUsername" class="form-label">Email</label>
+          <div class="input-group has-validation">
+            <input type="text" class="form-control text-secondary" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+            <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">國家</label>
+          <select class="form-select" id="validationCustom04" required>
+            <option value="">台灣</option>
+            <option value="台灣">台灣</option>
+            <option value="香港">香港</option>
+            <option value="馬來西亞">馬來西亞</option>
+          </select>
+          <div class="invalid-feedback">
+            請選擇國家
+          </div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom04" class="form-label">城市</label>
+          <select class="form-select" required aria-label="select example">
+            <option value="">城市</option>
+            <option value="台北市">台北市</option>
+            <option value="新北市">新北市</option>
+            <option value="桃園市">桃園市</option>
+          </select>
+          <div class="invalid-feedback">請選擇城市</div>
+        </div>
+        <div class="col-md-4">
+          <label for="validationCustom05" class="form-label">郵遞區號</label>
+          <input type="text" class="form-control" id="validationCustom05" required>
+          <div class="invalid-feedback">
+            請填寫郵遞區號
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="validationCustom05" class="form-label">地址</label>
+          <input type="text" class="form-control text-secondary" id="validationCustom05" placeholder="滴滴村12巷29號" required>
+          <div class="invalid-feedback">
+           請填寫地址
+          </div>
+        </div>
+        <div class="col-12 text-end">
+          <button class="btn btn-secondary" type="button">繼續選購</button>
+          <button class="btn btn-primary" type="submit">確認付款</button>
+        </div>
+      </form>
+      
+      
+    </div>
+    <!--結帳完成頁面-->
+    <div class="container">
+      <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳完成</strong></p>
+      <div class="row justify-content-center">
+        <div class="col-7">
+          <div class="alert alert-success text-center alert-rouned" role="alert">
+            完成!
+          </div>
+          <section class="table-responsive">
+            <p class="mt-2 pb-2 h4 border-bottom text-center">訂購人資訊</p>
+          <table class="table table-borderless table-hover mb-0">
+            <thead>
+              <tr>
+                <th></th>
+                <th class="text-start">商品名稱</th>
+                <th class="text-center">數量</th>
+                <th class="text-end">小計</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr >
+                <th>
+                    <a href="#" class="car-delete">
+                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </a>
+                </th>
+                <td>涼感保潔墊</td>
+                <td class="text-center">1件</td>
+                <td class="text-end">$1499</td>
+              </tr>
+              <tr >
+                <th>
+                    <a href="#" class="car-delete">
+                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </a>
+                </th>
+                <td>香氛噴霧器</td>
+                <td class="text-center">1件</td>
+                <td class="text-end">$599</td>
+              </tr>
+              <tr >
+                <th>
+                    <a href="#" class="car-delete">
+                        <i class="fa-regular fa-trash-can" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+                    </a>
+                </th>
+                <td>植萃精油</td>
+                <td class="text-center">2件</td>
+                <td class="text-end">$568</td>
+              </tr>
+            </tbody>
+            <tfoot class="border-top">
+              <tr>
+                <th colspan="3" class="text-end">運費</th>
+                <th class="text-end">$60</th>
+              </tr>
+              <tr>
+                <th colspan="3" class="text-end">總計</th>
+                <th class="text-end"><strong>$2,666</strong></th>
+              </tr>
+            </tfoot>
+          </table>
+          </section>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center mt-4">
+        <div class="col-7">
+          <section class="table-responsive ">
+            <p class="mt-2 pb-2 h4 text-center">個人資料</p>
+          <table class="table text-center table-hover">
+            <tbody>
+              <tr>
+                <th>Email</th>
+                <td>dd@gmail.com</td>
+              </tr>
+              <tr>
+                <th>姓名</th>
+                <td>黃*嘉</td>
+              </tr>
+              <tr>
+                <th>電話</th>
+                <td>0988766***</td>
+              </tr>
+              <tr>
+                <th>地址</th>
+                <td>滴滴路12巷29號</td>
+              </tr>
+            </tbody>
+          </table>
+          </section>
+        </div>
+      </div>
+      
+      
+      
+    </div>
+    <!--footer-->
+    <footer class="bg-light py-4 mt-4">
+      <div class="d-flex justify-content-center mt-4">
+        <p class="text-secondary ms-2">© Copright 2022 你的家居</p>
+        <a href="#" class="ms-2 footer-link">Instagrame</a>
+        <a href="#" class="ms-2 footer-link">Facebook</a>
+        <a href="#" class="ms-2 footer-link">About</a>
+      </div>
+      <p class="text-center text-secondary mb-4">Made with Bootstrap 5</p>
+    </footer>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-danger">
+        <h5 class="modal-title text-light" id="exampleModalLabel">刪除商品</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        是否確認刪除商品?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">否</button>
+        <button type="button" class="btn btn-outline-danger px-5">是</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--送出資料的認證-->
+<script>
+  // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+</script>
+
+    <!--bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
