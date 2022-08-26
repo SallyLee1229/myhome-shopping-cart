@@ -16,7 +16,7 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-light" id="navbar-example2">
+    <nav class="navbar navbar-expand-lg bg-light fixed-top" id="navbar-example2" >
         <div class="container-fluid">
           <a class="navbar-brand fw-bolder" href="#">你的家居</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -113,10 +113,11 @@
     <!--定位-->
     <div class="tab-content" id="pills-tabContent">
     <!--content-->
-    <div class="container mt-4 border-bottom" id="scrollspyHeading1">
+    <div class="container mt-4" id="scrollspyHeading1">
       <div class="row">
         <div class="col-md-3 mb-2">
-          <div class="list-group sticky-top" id="list-tab" role="tablist">
+          <div class="py-5 sticky-top">
+          <div class="list-group my-4" id="list-tab" role="tablist">
             <a class="list-group-item list-group-item-action active list-group-item-light" id="list-commodity-list" data-bs-toggle="list" href="#list-commodity" role="tab" aria-controls="list-commodity">精選商品</a>
             <a class="list-group-item list-group-item-action list-group-item-light" id="list-livingroom-list" data-bs-toggle="list" href="#list-livingroom" role="tab" aria-controls="list-livingroom">客廳家具</a>
             <a class="list-group-item list-group-item-action list-group-item-light" id="list-kitchen-list" data-bs-toggle="list" href="#list-kitchen" role="tab" aria-controls="list-kitchen">衛浴餐廚</a>
@@ -124,12 +125,14 @@
             <a class="list-group-item list-group-item-action list-group-item-light" id="list-ornament-list" data-bs-toggle="list" href="#list-ornament" role="tab" aria-controls="list-ornament">生活質感小物</a>
           </div>
         </div>
-        <div class="col-md-9">
-          <form class="d-flex col-4" role="search">
+      </div>
+        <div class="col-md-9 mt-4">
+          <form class="d-flex col-4 mt-5" role="search">
             <input class="form-control form-control-sm me-2 " type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-warning btn-sm" type="submit">Search</button>
           </form>
           <div class="tab-content" id="nav-tabContent">
+          
             <!--精選商品內容-->
             <div class="tab-pane fade show active" id="list-commodity" role="tabpanel" aria-labelledby="list-commodity-list">
               <div class="row">
@@ -886,20 +889,21 @@
       </div>
     </div>
     <!--商品頁面-->
-    <div class="container pt-3 border-bottom mb-4" id="scrollspyHeading2">
-      <div class="mt-3">
-        <nav aria-label="breadcrumb">
-          <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="#" class="footer-link">首頁</a></li>
-            <li class="breadcrumb-item"><a href="#" class="footer-link">精選商品</a></li>
-            <li class="breadcrumb-item active" aria-current="page">三人布沙發</li>
-          </ol>
-        </nav>
-      </div>
+    <div class="container pt-3  mb-4" id="scrollspyHeading2">
+      <hr class="border-top mt-4">
       <div class="row mt-4 mb-4">
         <div class="col-lg-5 pe-4">
           <div class="sticky-top">
-            <h1 class="fw-semibold pt-4">三人布沙發<span class="text-secondary h3 ps-2">(英倫文青風)</span></h1>
+            <div class="mt-3">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" class="footer-link">首頁</a></li>
+                  <li class="breadcrumb-item"><a href="#" class="footer-link">精選商品</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">三人布沙發</li>
+                </ol>
+              </nav>
+            </div>
+            <h1 class="fw-semibold pt-5">三人布沙發<span class="text-secondary h3 ps-2">(英倫文青風)</span></h1>
             <div class="d-flex pt-2">
               <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
               <i class="fa-solid fa-star ps-1" style="color: rgb(176, 165, 165);"></i>
@@ -965,8 +969,9 @@
       </div>
     </div>
     <!--結帳頁面-->
-    <div class="container border-bottom pb-4" id="scrollspyHeading3">
-      <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳</strong></p>
+    <div class="container pb-4 " id="scrollspyHeading3">
+      <hr class="border-top mt-4">
+      <p class="h1 text-center pt-4 pb-3 text-secondary mt-5"><strong>你的家居 結帳</strong></p>
       <div class="row">
         <div class="col-sm">
           <div class="alert alert-success text-center alert-rouned" role="alert">
@@ -1108,6 +1113,7 @@
     </div>
     <!--結帳完成頁面-->
     <div class="container" id="scrollspyHeading4">
+      <hr class="border-top mt-4">
       <p class="h1 text-center pt-4 pb-3 text-secondary"><strong>你的家居 結帳完成</strong></p>
       <div class="row justify-content-center">
         <div class="col-7">
